@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Calculadora en PHP</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form action="procesar.php" method="post">
+        <label for="valor1">Valor 1 :</label>
+        <input type="number" id="valor1" name="valor1" pattern=" " required><br><br>
+        
+        <label for="valor2">Valor 2 :</label>
+        <input type="number" id="valor2" name="valor2" patter=" " required><br><br>
+        
+        <label for="operacion">Operación :</label>
+        <select id="operacion" name="operacion" required>
+            <option value="Suma">Suma</option>
+            <option value="Resta">Resta</option>
+            <option value="Multiplicacion">Multiplicación</option>
+            <option value="Division">División</option>
+        </select><br><br>
+        
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>
